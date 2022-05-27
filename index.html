@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<!-- INÍCIO BOOTSTRAP -->
-<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-<!-- FINAL BOOTSTRAP -->
+  <!-- INÍCIO BOOTSTRAP -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+  <!-- FINAL BOOTSTRAP -->
   <link rel="stylesheet" href="./css/style.css">
 
 
@@ -18,51 +18,117 @@
 
 <body>
   <header class="container-fluid">
-    <div class="header-logo">
-      <img src="./image/logo.png" alt="">
-    </div>
-    <nav class="header-nav">
-      <ul>
-        <li>
-          <a href="">
-            <img class="logo" src="./image/gps.png" alt="">
-            Melhores Destinos
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="./image/hotel.png" alt="">
-            Hotéis
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="./image/plane.png" alt="">
-            Passagens
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="./image/car.png" alt="">
-            Carros
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="./image/restaurant.png" alt="">
-            Restaurantes
-          </a>
-        </li>
-          <li>
-            <a href="">
-              <img src="./image/user.png" alt="">
-              Entre ou Cadastre-se
-            </a>
-          </li>
-        </ul>
-      <!-- </div> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div>
+          <img src="./image/logo.png" alt="">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">
+                <img src="./image/gps.png" alt="">
+                Melhores Destinos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">
+                <img src="./image/hotel.png" alt="">
+                Hotéis
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="./image/plane.png" alt="">
+                Passagens
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">
+                <img src="./image/car.png" alt="">
+                Carros
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="./image/restaurant.png" alt="">
+                Restaurantes
+              </a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./image/mais.png" alt="">
+                Mais
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul> -->
+            </li>
+
+          </ul>
+          <ul class="d-flex">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">
+                <img src="./image/user.png" alt="">
+                Entre ou Cadastre-se
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
+
+  <div class="passagem">
+    <h3>Passagens</h3>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Origem" aria-label="Recipient's username"
+        aria-describedby="button-addon2">
+      <img src="./image/airplane.png" alt="">
+      <input type="text" class="form-control" placeholder="Destino" aria-label="Recipient's username"
+        aria-describedby="button-addon2">
+      <button type="button" class="btn btn-dark">Buscar</button>
+    </div>
+  </div>
+
+
+  <div class="btn-cards">
+
+    <div>
+      <h1>Compartilhe. <br>
+        Aprenda. Viaje. <br> <br>
+      </h1>
+      <h3>
+        Veja dicas de <br> viajantes que já <br> estiveram no seu destino. <br> <br>
+
+        Compartilhe sua <br> experiência com <br> outros viajantes.
+      </h3>
+    </div>
+
+    <div class="card " style="width: 13rem; height: 20rem">
+      <img src="./image/dicas.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Dicas de Viagens</h5>
+        <p class="card-text"></p>
+        <a href="#" class="btn btn-primary">Acessar</a>
+      </div>
+    </div>
+    <div class="card " style="width: 13rem; height: 20rem">
+      <img src="./image/foruns.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Fóruns de Viagens</h5>
+        <p class="card-text"></p>
+        <a href="#" class="btn btn-primary">Acessar</a>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
